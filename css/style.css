@@ -434,3 +434,16 @@ input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px soli
 @media (max-width:760px){
   .reveal-left,.reveal-right{transform:translateY(30px)}
 }
+
+
+/* ---- phone safety net: nothing may push the page sideways ---- */
+html,body{max-width:100%;overflow-x:hidden}
+@media (max-width:760px){
+  .hero,.hero-inner,.hero-figure,.hero--home .hero-figure{max-width:100%;overflow:hidden}
+  .hero--home .hero-cutout{width:100%;max-width:100%;margin:0}
+  .wrap,.inner,.header-inner,.hero-inner{padding-left:22px;padding-right:22px}
+  .split img,.pillar img,.page-hero img,.card img,.pod-cover{max-width:100%}
+  .taggrid,.cols2,.grid2,.grid3,.grid4,.paths,.method,.band4,.tcards{max-width:100%}
+  h1,h2,h3,h4,p,li,.statement,.q,.pull{overflow-wrap:anywhere}
+  .tscroll{max-width:100vw}
+}

@@ -22,13 +22,13 @@ TIKTOK_URL    = "https://www.tiktok.com/@ashleyperrylambert"
 YOUTUBE_URL   = "https://www.youtube.com/@AshleyPerryLambert"
 PODCAST_APPLE_URL   = "https://podcasts.apple.com/us/podcast/fat-loss-reinvention-lose-weight-build-muscle-strength/id1865337221"
 PODCAST_SPOTIFY_URL = "#"
-COLLECTIVE_SIGNUP_URL = "https://www.ashleyperrylambert.com/collective"
+COLLECTIVE_SIGNUP_URL = "https://go.ashleyperrylambert.com/collective"
 FORMSPREE_ID = "YOUR_FORM_ID"   # from formspree.io, looks like xyzabcde
 # =========================================================
 FORM_ACTION = "https://formspree.io/f/%s" % FORMSPREE_ID
 SITE_URL = "https://ashleyperrylambert.com"
 OG_IMAGE = SITE_URL + "/images/og-image.jpg"
-QUIZ_URL = "https://www.ashleyperrylambert.com/quiz1"
+QUIZ_URL = "https://go.ashleyperrylambert.com/quiz"
 QUIZ_NAME = "What&rsquo;s Keeping You From Feeling Like Yourself Again?"
 FRAMEWORK = "Renew Your Mind. Transform Your Body. Redefine Your Life."
 BRAND_STATEMENT = "Fitness is one doorway. The body is one piece. But the woman is the work."
