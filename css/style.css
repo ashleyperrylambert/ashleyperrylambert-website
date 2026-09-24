@@ -616,3 +616,50 @@ html,body{max-width:100%;overflow-x:hidden}
     max-width: 100% !important;
   }
 }
+
+
+/* =========================================================
+   BRING BACK HERO TAGLINES ON TABLET + MOBILE
+   ========================================================= */
+@media (max-width: 1024px) {
+
+  .hero--home .hero-figure {
+    padding-top: 130px !important;
+    overflow: visible !important;
+  }
+
+  .hero-script,
+  .hero-mark {
+    display: block !important;
+  }
+
+  .hero--home .hero-script {
+    top: 10px !important;
+    right: 0 !important;
+    font-size: 24px !important;
+  }
+
+  .hero-mark {
+    right: 0 !important;
+    bottom: 22px !important;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .hero--home .hero-figure {
+    padding-top: 110px !important;
+  }
+
+  .hero--home .hero-script {
+    top: 6px !important;
+    right: 4px !important;
+    font-size: 20px !important;
+  }
+
+  .hero-mark {
+    right: 4px !important;
+    bottom: 18px !important;
+    font-size: 9px !important;
+  }
+}
