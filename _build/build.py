@@ -27,7 +27,7 @@ FORMSPREE_ID = "YOUR_FORM_ID"   # from formspree.io, looks like xyzabcde
 # =========================================================
 FORM_ACTION = "https://formspree.io/f/%s" % FORMSPREE_ID
 COACHING_FORM_ACTION = "https://formspree.io/f/xyezjopn"
-SPEAKING_FORM_ACTION = COACHING_FORM_ACTION  # same inbox; distinct _subject field
+SPEAKING_FORM_ACTION = COACHING_FORM_ACTION  # same inbox; distinct subject field
 SITE_URL = "https://ashleyperrylambert.com"
 OG_IMAGE = SITE_URL + "/images/og-image.jpg"
 QUIZ_URL = "https://go.ashleyperrylambert.com/quiz"
