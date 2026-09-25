@@ -1169,7 +1169,7 @@ speaking_form = """<section class="page-hero solo bg-cream">
 <section class="section bg-white">
   <div class="wrap" style="max-width:920px">
     <div class="formcard">
-      <form class="form" id="speakingForm" action="{{SPEAKING_FORM_ACTION}}" method="POST"><input type="hidden" name="_subject" id="speakingSubject" value="Speaking Request (website)">
+      <form class="form" id="speakingForm" action="{{SPEAKING_FORM_ACTION}}" method="POST"><input type="hidden" name="subject" id="speakingSubject" value="Speaking Request (website)">
         <div class="f2">%s%s</div>
         <div class="f2">%s%s</div>
         <div class="f2">%s%s</div>
@@ -1219,7 +1219,7 @@ coaching_form = """<section class="page-hero solo bg-cream">
 <section class="section bg-white">
   <div class="wrap" style="max-width:920px">
     <div class="formcard">
-      <form class="form" action="{{COACHING_FORM_ACTION}}" method="POST"><input type="hidden" name="_subject" value="Coaching Request (website)">
+      <form class="form" action="{{COACHING_FORM_ACTION}}" method="POST"><input type="hidden" name="subject" value="Coaching Request (website)">
         <div class="f2">%s%s</div>
         %s
         %s
