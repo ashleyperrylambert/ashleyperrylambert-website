@@ -26,6 +26,8 @@ COLLECTIVE_SIGNUP_URL = "https://go.ashleyperrylambert.com/collective"
 FORMSPREE_ID = "YOUR_FORM_ID"   # from formspree.io, looks like xyzabcde
 # =========================================================
 FORM_ACTION = "https://formspree.io/f/%s" % FORMSPREE_ID
+COACHING_FORM_ACTION = "https://formspree.io/f/xyezjopn"
+SPEAKING_FORM_ACTION = COACHING_FORM_ACTION  # same inbox; distinct subject field
 SITE_URL = "https://ashleyperrylambert.com"
 OG_IMAGE = SITE_URL + "/images/og-image.jpg"
 QUIZ_URL = "https://go.ashleyperrylambert.com/quiz"
@@ -221,7 +223,9 @@ def cta_band(h2, body, buttons, bg="bg-petal"):
 
 
 def page(filename, title, description, body, active=None, schema=None, full_title=None):
-    body = (body.replace("{{FORM_ACTION}}", FORM_ACTION)
+    body = (body.replace("{{COACHING_FORM_ACTION}}", COACHING_FORM_ACTION)
+                .replace("{{SPEAKING_FORM_ACTION}}", SPEAKING_FORM_ACTION)
+                .replace("{{FORM_ACTION}}", FORM_ACTION)
                 .replace("{{IG}}", INSTAGRAM_URL).replace("{{TT}}", TIKTOK_URL)
                 .replace("{{APPLE}}", PODCAST_APPLE_URL).replace("{{SPOTIFY}}", PODCAST_SPOTIFY_URL)
                 .replace("{{COLLECTIVE}}", COLLECTIVE_SIGNUP_URL))
@@ -1165,7 +1169,7 @@ speaking_form = """<section class="page-hero solo bg-cream">
 <section class="section bg-white">
   <div class="wrap" style="max-width:920px">
     <div class="formcard">
-      <form class="form" id="speakingForm" action="{{FORM_ACTION}}" method="POST"><input type="hidden" name="_subject" id="speakingSubject" value="Speaking Request (website)">
+      <form class="form" id="speakingForm" action="{{SPEAKING_FORM_ACTION}}" method="POST"><input type="hidden" name="subject" id="speakingSubject" value="Speaking Request (website)">
         <div class="f2">%s%s</div>
         <div class="f2">%s%s</div>
         <div class="f2">%s%s</div>
@@ -1215,7 +1219,7 @@ coaching_form = """<section class="page-hero solo bg-cream">
 <section class="section bg-white">
   <div class="wrap" style="max-width:920px">
     <div class="formcard">
-      <form class="form" action="{{FORM_ACTION}}" method="POST"><input type="hidden" name="_subject" value="Coaching Request (website)">
+      <form class="form" action="{{COACHING_FORM_ACTION}}" method="POST"><input type="hidden" name="subject" value="Coaching Request (website)">
         <div class="f2">%s%s</div>
         %s
         %s
